@@ -6,6 +6,11 @@ public class Soldier extends Person {
     }
 
     @Override
+    public void fight() {
+
+    }
+
+    @Override
     public void report() {
 
     }

@@ -12,6 +12,11 @@ public class General extends Person {
     }
 
     @Override
+    public void fight() {
+
+    }
+
+    @Override
     public void report() {
 
     }

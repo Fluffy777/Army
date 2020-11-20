@@ -6,6 +6,7 @@ public abstract class Person implements ReadyToWar {
     protected String name;
     protected int age;
     protected String rank;
+    protected Person leader;
 
     protected LinkedList<Person> subordinates;
 
@@ -24,6 +25,10 @@ public abstract class Person implements ReadyToWar {
         subordinates.remove(obj);
     }
 
+    protected void setLeader(Person leader) {
+        this.leader = leader;
+    }
+
     public void introduceYourself() {
         System.out.println("Вітаю! Мене звати " + name + ". Мені " + age + " років. Маю звання " + rank + ".");
     }
@@ -34,5 +39,6 @@ public abstract class Person implements ReadyToWar {
         for (Person temp : subordinates) {
             result += (temp.rank + " " + temp.name);
         }
+        result += ".";
     }
 }

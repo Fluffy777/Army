@@ -12,6 +12,11 @@ public class Commander extends Person {
     }
 
     @Override
+    public void fight() {
+
+    }
+
+    @Override
     public void report() {
 
     }

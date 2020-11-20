@@ -19,20 +19,22 @@ public class Main {
 
             new General("Олексій",45), // 8
         };
-
-        // додавання підлеглих для 1-го командира
+        // додавання підлеглих для 1-го командира + встановлення керівника
         for (int i = 0; i < 3; ++i) {
             soldiers[6].addSubordinate(soldiers[i]);
+            soldiers[i].setLeader(soldiers[6]);
         }
 
         // додавання підлеглих для 2-го командира
         for (int i = 3; i < 6; ++i) {
-            soldiers[6].addSubordinate(soldiers[i]);
+            soldiers[7].addSubordinate(soldiers[i]);
+            soldiers[i].setLeader(soldiers[7]);
         }
 
         // додавання підлеглих для генерала
         for (int i = 6; i < 8; ++i) {
             soldiers[8].addSubordinate(soldiers[i]);
+            soldiers[i].setLeader(soldiers[8]);
         }
 
         System.out.println("Work work");
